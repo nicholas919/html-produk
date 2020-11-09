@@ -101,7 +101,7 @@ function daftarHTMLProduk(doc){
       let yyyy = new Date(tanggalPerubahan).getFullYear();
       let hh = ('0' + new Date(tanggalPerubahan).getHours()).slice(-2);
       let ms = ('0' + new Date(tanggalPerubahan).getMinutes()).slice(-2);      
-      tanggalPerubahan = ' - ' + 'Last changed ' + dd + ' ' + bulan[mm] + ' ' + yyyy + ', ' + hh + ':' + ms;  
+      tanggalPerubahan = ' - ' + 'Terakhir diedit ' + dd + ' ' + bulan[mm] + ' ' + yyyy + ', ' + hh + ':' + ms;  
   }
   li.setAttribute('data-date', tanggal);
 
@@ -201,7 +201,7 @@ function updateHTMLProduk(doc){
     tanggalPerubahan = dd + ' ' + bulan[mm] + ' ' + yyyy + ', ' + hh + ':' + ms;
     document.querySelector('#produk-tampilan' + doc.id).innerHTML = produk;
     document.querySelector('#html-tampilan' + doc.id).innerText = html.replace(/<br\s*\/?>/gi , '\n');
-    document.querySelector('#tanggal-perubahan' + doc.id).innerHTML = ' - ' + 'Last changed ' + tanggalPerubahan;
+    document.querySelector('#tanggal-perubahan' + doc.id).innerHTML = ' - ' + 'Terakhir diedit ' + tanggalPerubahan;
 }
 
 const createForm = document.querySelector('#html-produk-form');
