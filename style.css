@@ -199,6 +199,14 @@ li{
 	display: none !important;
 }
 
+div .collapsible-header{
+	display: block !important;
+}
+
+#container{
+	width: 98%;
+}
+
 div .collapsible-header, .html-tampilan, .tanggal-perubahan, .produk-tampilan{
 	font-size: 13px;
 }
