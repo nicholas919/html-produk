@@ -109,9 +109,9 @@ function daftarHTMLProduk(doc){
         <div class="collapsible-header grey lighten-5 card-panel"><span id="produk-tampilan${doc.id}" class="produk-tampilan">${produk}</span> <span id="tanggal-perubahan${doc.id}" class="tanggal-perubahan">${tanggalPerubahan}</span></div>
         <button id="copas${doc.id}" class="btn fiturwaves-effect waves-light btn-large blue darken-2">Copy</button>
         <button id="hapus${doc.id}" class="hapus fitur btn waves-effect waves-light btn-large red lighten-1">x</button>
-        <div class="collapsible-body ${doc.id}"> 
+        <div class="collapsible-body ${doc.id}">
+        <div class="konfigurasi"><a id="edit${doc.id}" class="btn waves-effect waves-light btn-medium amber lighten-1 modal-trigger" data-target="modal-html-produk${doc.id}">Edit</a> <a id="hapusKedua${doc.id}" class="btn waves-effect waves-light btn-medium red lighten-1">Hapus</a></div> 
         <div id="html-tampilan${doc.id}" class="html-tampilan"></div> 
-        <div class="konfigurasi"><a id="edit${doc.id}" class="btn waves-effect waves-light btn-medium amber lighten-1 modal-trigger" data-target="modal-html-produk${doc.id}">Edit</a> <a id="hapusKedua${doc.id}" class="btn waves-effect waves-light btn-medium red lighten-1">Hapus</a></div>
         </div>
 `
 
