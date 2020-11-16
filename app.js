@@ -97,7 +97,7 @@ function daftarHTMLProduk(doc){
   } else {
       let bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];    
       let dd = String(new Date(tanggalPerubahan).getDate()).padStart(2, '0');
-      let mm = String(new Date(tanggalPerubahan).getMonth() + 1).padStart(2, '0');
+      let mm = String(new Date(tanggalPerubahan).getMonth()).padStart(2, '0');
       let yyyy = new Date(tanggalPerubahan).getFullYear();
       let hh = ('0' + new Date(tanggalPerubahan).getHours()).slice(-2);
       let ms = ('0' + new Date(tanggalPerubahan).getMinutes()).slice(-2);      
@@ -194,7 +194,7 @@ function updateHTMLProduk(doc){
     let tanggalPerubahan = doc.data().tanggalPerubahan;
     let bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];    
     let dd = String(new Date(tanggalPerubahan).getDate()).padStart(2, '0');
-    let mm = String(new Date(tanggalPerubahan).getMonth() + 1).padStart(2, '0');
+    let mm = String(new Date(tanggalPerubahan).getMonth()).padStart(2, '0');
     let yyyy = new Date(tanggalPerubahan).getFullYear();
     let hh = ('0' + new Date(tanggalPerubahan).getHours()).slice(-2);
     let ms = ('0' + new Date(tanggalPerubahan).getMinutes()).slice(-2);    
